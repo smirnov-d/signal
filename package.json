@@ -1,0 +1,25 @@
+{
+  "name": "signal",
+  "version": "1.0.0",
+  "description": "signaling server for web-rtc app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smirnov-d/signal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smirnov-d/signal/issues"
+  },
+  "homepage": "https://github.com/smirnov-d/signal#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
