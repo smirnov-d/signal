@@ -15,6 +15,10 @@ io.on('connection', (socket) => {
     console.log('system-answer', data);
     io.emit('answer', data);
   });
+  socket.on('new-icecandidate', (data) => {
+    console.log('new-icecandidate', data);
+    io.emit('new-icecandidate', data);
+  });
 });
 
 http.listen(PORT, () => {
