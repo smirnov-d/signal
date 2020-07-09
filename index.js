@@ -17,7 +17,7 @@ io.on('connection', (socket) => {
   });
   socket.on('new-icecandidate', (data) => {
     console.log('new-icecandidate', data);
-    io.emit('new-icecandidate', data);
+    socket.broadcast.emit('new-icecandidate', data);
   });
 });
 
